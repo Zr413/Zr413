@@ -6,8 +6,8 @@ from time import sleep
 
 
 driver = webdriver.Chrome('/media/zft/HDD1T/projects/Zr413/Zr413/chromedriver')
-driver.get('https://google.com')
-driver.find_element(By.XPATH, '//*[@id="input"]').send_keys('Skillfactory' + Keys.RETURN)
-sleep(2)
-driver.save_screenshot('sf.png')
+driver.get('https://ya.ru')
+(driver.find_element(By.XPATH, '/html/body/main/div[4]/img')).click()
+sleep(3)
+# driver.save_screenshot('sf.png')
 driver.quit()
